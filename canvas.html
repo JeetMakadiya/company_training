@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Exercises</title>
+</head>
+<body>
+    <center><h1>Canvas Exercises</h1></center>
+    <canvas id="canvas1" width="200" height="200" style="border: 1px solid black;">
+    </canvas>
+    <br><br>
+    <canvas id="canvas2" width="100" height="100" style="border: 1px solid black;">
+    </canvas>
+    <script>
+        var canvas1 = document.getElementById('canvas1');
+        var obj1 = canvas1.getContext('2d');
+        obj1.fillStyle = "green";
+        obj1.fillRect(25,25,140,140);
+
+        var canvas2 = document.getElementById('canvas2');
+        var obj2 = canvas2.getContext('2d');
+        obj2.beginPath();
+        obj2.arc(50,50,40,0,2*Math.PI);
+        obj2.fillStyle = "#3399ff";
+        obj2.fill();
+        obj2.lineWidth = 5;
+        obj2.strokeStyle = "#000090";
+        obj2.stroke();
+    </script>
+</body>
+</html>
