@@ -11,176 +11,185 @@
 <body>
     <header>
         <nav class="top-nav-bar">
-            <div class="top-nav-bar-item-1"></div>
-            <div class="top-nav-bar-item-2">
-                <div class="logo-container">
-                    <img src="imgs/logo.png" alt="Flipkart" title="Flipkart">
-                    <a href="#" class="logo-explor-plus">Explore <span>Plus </span><img src="imgs/plus_icon.png" alt="Plus" srcset=""></a>
-                </div>
-                <div class="search_box">
-                    <div><input type="text" title="Search for products, brands and more" placeholder="Search for products, brands and more"></div>
-                    <div class="search-icon-div"><i class="material-icons">search</i></div>   
-                </div>
-                <div class="login-btn-div">
-                    <button>Login</button>
-                </div>
-                <div class="more">
+            <div class="logo-container">
+                <img src="imgs/logo.png" alt="Flipkart" title="Flipkart">
+                <a href="#" class="logo-explor-plus">Explore <span>Plus</span>&nbsp;<img src="imgs/plus_icon.png" alt="Plus" srcset=""></a>
+            </div>
+            <div class="search-box-container">
+                <input type="text" title="Search for products, brands and more" placeholder="Search for products, brands and more">
+                <i class="material-icons">search</i>
+            </div>
+            <div class="nav-menu-container">
+                <a href="#" class="nav-menu-login-btn">Login</a>
+                <a href="#" class="nav-menu-more">
                     <span>More</span>&nbsp;
                     <i class="material-icons">expand_more</i>
-                </div>
-                <div class="cart">
+                </a>
+                <a href="#" class="nav-menu-cart">
                     <i class="material-icons">shopping_cart</i>&nbsp;
-                    <span>Cart</span>                  
-                </div>
+                    <span>Cart</span>
+                </a>
             </div>
-            <div class="top-nav-bar-item-3"></div>
         </nav>
     </header>
-    <main>
-        <section>
-            <div class="category-flex">
+    <!-- category section -->
+    <section class="category-section">
+        <div class="category">
+            <img src="imgs/category_1.png" alt="" srcset="">
+            <p>Top Offers</p>
+        </div>
+        <div class="category">
+            <img src="imgs/category_2.png" alt="" srcset="">
+            <p>Grocery</p>
+        </div>
+        <div class="category">
+            <img src="imgs/category_3.png" alt="" srcset="">
+            <p>Mobiles</p>
+        </div>
+        <div class="category">
+            <img src="imgs/category_4.png" alt="" srcset="">
+            <p class="category-p-with-icon"><span>Fashion </span><i class="material-icons">expand_more</i></p>
+        </div>
+        <div class="category">
+            <img src="imgs/category_5.png" alt="" srcset="">
+            <p class="category-p-with-icon"><span>Electronics </span><i class="material-icons">expand_more</i></p>
+        </div>
+        <div class="category">
+            <img src="imgs/category_6.jpg" alt="" srcset="">
+            <p class="category-p-with-icon"><span>Home </span><i class="material-icons">expand_more</i></p>
+        </div>
+        <div class="category">
+            <img src="imgs/category_7.png" alt="" srcset="">
+            <p class="category-p-with-icon"><span>Appliances </span><i class="material-icons">expand_more</i></p>
+        </div>
+        <div class="category">
+            <img src="imgs/category_8.png" alt="" srcset="">
+            <p>Travel</p>
+        </div>
+        <div class="category">
+            <img src="imgs/category_9.png" alt="" srcset="">
+            <p class="category-p-with-icon"><span>Beauty,  Toys & More </span><i class="material-icons">expand_more</i></p>
+        </div>
+    </section>
+    <!-- first section with advertisment -->
+    <section class="section-with-advertisment">
+        <div class="card">
+            <div class="card-header">
                 <div>
-                    <img src="imgs/offers.png" alt="top offers" />
-                    <p>Top Offers</p>
+                    <h3>Deals of the Day</h3>
+                </div>
+                <div class="timer_div">
+                    <img src="imgs/timer_watch.svg" alt="" srcset="">
+                    &nbsp;<span>23</span>
+                    &nbsp;<span>:</span>&nbsp;
+                    <span>25</span>
+                    &nbsp;<span>:</span>&nbsp;
+                    <span>53</span>
+                    &nbsp;<span>Left</span>
                 </div>
                 <div>
-                    <img src="imgs/Grocery.png" alt="Grocery" />
-                    <p>Grocery</p>
-                </div>
-                <div>
-                    <img src="imgs/mobiles.png" alt="Mobiles" />
-                    <p>Mobiles</p>
-                </div>
-                <div>
-                    <img src="imgs/Fashion.png" alt="Fashion" />
-                    <p><select name="" id="">
-                            <option value="">Fashion</option>
-                        </select></p>
-                </div>
-                <div>
-                    <img src="imgs/Electronics.png" alt="Electronics" />
-                    <p><select name="" id="">
-                            <option value="">Electronics</option>
-                        </select></p>
-                </div>
-                <div>
-                    <img src="imgs/Home.png" alt="Home" />
-                    <p><select name="" id="">
-                            <option value="">Home</option>
-                        </select></p>
-                </div>
-                <div>
-                    <img src="imgs/Appliances.png" alt="Appliance" />
-                    <p><select name="" id="">
-                            <option value="">Appliance</option>
-                        </select></p>
-                </div>
-                <div>
-                    <img src="imgs/Travel.png" alt="Travel" />
-                    <p>Travel</p>
-                </div>
-                <div>
-                    <img src="imgs/Beauty,toys and more.png" alt="Beauty, Toys & More" />
-                    <p><select name="" id="">
-                            <option value="">Beauty, Toys & More</option>
-                        </select></p>
-                </div>
-            </div>
-        </section>
-        <section class="sectionclass">
-            <div class="sectionHeader">
-                <big>Deals of the Day</big>
-                <small>22 : 07 : 36 left</small>
-                <button class="viewBtn">view</button>
-            </div>
-            <div class="deal-flex">
-                <div>
-                    <img src="imgs/sonata.jpeg" alt="product1">
-                    <h2>Casio, Fastrack, Sonata...</h2>
-                    <p>Upto 80%+Extra 10%Off</p>
-                    <small>Knockout Deals!</small>
-                </div>
-                <div>
-                    <img src="imgs/temple.jpeg" alt="product1">
-                    <h2>Home Temple & more</h2>
-                    <p>Extra 10%Off</p>
-                    <small>Space Saving Furniture</small>
-                </div>
-                <div>
-                    <img src="imgs/tablet.jpeg" alt="product1">
-                    <h2>Premium Tablet Cases</h2>
-                    <p>Extra 10%Off</p>
-                    <small>For All Top Models</small>
-                </div>
-                <div>
-                    <img src="imgs/home-decor.jpeg" alt="product1">
-                    <h2>Best Of Home Decor</h2>
-                    <p>From 79</p>
-                    <small>Lowest Price Ever</small>
-                </div>
-                <div>
-                    <img src="imgs/metronaunts.jpeg" alt="product1">
-                    <h2>Metronaunts,Provogue &...</h2>
-                    <p>From 249Extra 10%Off</p>
-                    <small>Jacket, Dresses & More</small>
-                </div>
-                <div>
-                    <img src="imgs/LAVA.jpeg" alt="product1">
-                    <h2>LAVA A1500</h2>
-                    <p>Flat 830 Off</p>
-                    <small>Now 999</small>
+                    <button>view all</button>
                 </div>
             </div>
-            
-        </section>
-        <section class="sectionclass">
-            <div class="sectionHeader">
-                <big>Books And music Instruments</big>
-                <small>Shop now</small>
-                <button>view</button>
+            <div class="card-body">
+                <div class="products">
+                    <img src="imgs/shoes.jpeg" alt="" srcset="">
+                    <h4>Sparx, Bruton & more</h4>
+                    <p class="green">From ₹199+Extra10%off</p>
+                    <p class="gray">Casual Shoes For Men's</p>
+                </div>
+                <div class="products">
+                    <img src="imgs/bags.jpg" alt="" srcset="">
+                    <h4>Bags and Luggage</h4>
+                    <p class="green">Upto 70%+Extra5%Off</p>
+                    <p class="gray">Grab The Deal</p>
+                </div>
+                <div class="products">
+                    <img src="imgs/remote-control-board.jpeg" alt="" srcset="">
+                    <h4>Remote Control, Board Games...</h4>
+                    <p class="green">Upto 70%+Extra10% off</p>
+                    <p class="gray">Hot Wheels, Nerf, Barbie & more</p>
+                </div>
+                <div class="products">
+                    <img src="imgs/microphones.jpeg" alt="" srcset="">
+                    <h4>Best Selling Microphones</h4>
+                    <p class="green">Extra 5% Off</p>
+                    <p class="gray">Explore Now!</p>
+                </div>
+                <div class="products">
+                    <img src="imgs/watch.jpeg" alt="" srcset="">
+                    <h4>Pressure Cooker & more</h4>
+                    <p class="green">From ₹599</p>
+                    <p class="gray">Pigeon, Prestige & more</p>
+                </div>
+                <div class="side-arrow">
+                    <i class="material-icons">chevron_right</i>
+                </div>
             </div>
-            <div class="deal-flex">
+        </div>
+        <aside class="advertisment">
+            <img src="imgs/advertisment.jpg" alt="" srcset="">
+        </aside>
+    </section>
 
+    <section class="product-section">
+        <div class="card">
+            <div class="card-header">
                 <div>
-                    <img src="imgs/harmoniums.jpeg" alt="product1" />
-                    <h2>Harmoniums</h2>
-                    <p>Up to 60% Off</p>
-                    <small>Shop Now!</small>
+                    <h3>Deals of the Day</h3>
                 </div>
                 <div>
-                    <img src="imgs/flutes.jpeg" alt="product1">
-                    <h2>Flutes</h2>
-                    <p>Up to 80% Off</p>
-                    <small>Shop Now!</small>
-                </div>
-                <div>
-                    <img src="imgs/acoustic-guitars.jpeg" alt="product1">
-                    <h2>Acoustic Guitars</h2>
-                    <p>Starting ₹1799</p>
-                    <small>Juarez, Revel..</small>
-                </div>
-                <div>
-                    <img src="imgs/musical-acce.jpeg" alt="product1">
-                    <h2>Musical Accessories</h2>
-                    <p>Up to 80% Off</p>
-                    <small>Shop Now!</small>
-                </div>
-                <div>
-                    <img src="imgs/microphone.jpeg" alt="product1">
-                    <h2>Microphones Accessories</h2>
-                    <p>Up to 80% Off</p>
-                    <small>Shop Now!</small>
-                </div>
-                <div>
-                    <img src="imgs/acoustic-guitars.jpeg" alt="product1">
-                    <h2>Acoustic Guitars</h2>
-                    <p>Starting ₹1999</p>
-                    <small>By Revel..</small>
+                    <button>view all</button>
                 </div>
             </div>
-
-        </section>
-    </main>
-    <footer></footer>
+            <div class="card-body">
+                <div class="products">
+                    <img src="imgs/harmonium.jpeg" alt="" srcset="">
+                    <h4>harmoniums</h4>
+                    <p class="green">Up to 60% Off</p>
+                    <p class="gray">Shop Now!</p>
+                </div>
+                <div class="products">
+                    <img src="imgs/flutes.jpeg" alt="" srcset="">
+                    <h4>Flutes</h4>
+                    <p class="green">Up to 80% Off</p>
+                    <p class="gray">Shop Now!</p>
+                </div>
+                <div class="products">
+                    <img src="imgs/acoustic-guitars.jpeg" alt="" srcset="">
+                    <h4>Acoustic Guitars</h4>
+                    <p class="green">Starting ₹1799</p>
+                    <p class="gray">Juarez, Revel</p>
+                </div>
+                <div class="products">
+                    <img src="imgs/musical-accessory.jpeg" alt="" srcset="">
+                    <h4>Best Selling Organs</h4>
+                    <p class="green">Up to 80% Off</p>
+                    <p class="gray">Shop Now!</p>
+                </div>
+                <div class="products">
+                    <img src="imgs/speakers.jpeg" alt="" srcset="">
+                    <h4>Speakers</h4>
+                    <p class="green">Up to 80% Off</p>
+                    <p class="gray">Shop Now!</p>
+                </div>
+                <div class="products">
+                    <img src="imgs/micro-phone-accessory.jpeg" alt="" srcset="">
+                    <h4>Musical Instruments</h4>
+                    <p class="green">From ₹599</p>
+                    <p class="gray">Shop Now!</p>
+                </div>
+                <div class="products">
+                    <img src="imgs/organ.jpeg" alt="" srcset="">
+                    <h4>Musical Accessory</h4>
+                    <p class="green">From ₹599</p>
+                    <p class="gray">Shop Now!</p>
+                </div>
+                <div class="side-arrow">
+                    <i class="material-icons">chevron_right</i>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
