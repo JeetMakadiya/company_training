@@ -5,8 +5,215 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Scientific Calculator</h1>
+    <h2>Scientific Calculator</h2>
+    <div class="table-container">
+        <table>
+            <form class="myForm">
+                <tr class="row1">
+                    <th colspan="5">
+                        <!-- <input type="text" class="input-box"> -->
+                        <div class="output-container">
+                            <div class="operation">
+                                <p class="operation-value">0</p>
+                            </div>
+                            <div class="result">
+                                <p class="result-value"></p>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                <tr class="row2">
+                    <td>DEG</td>
+                    <td>F-E</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="row3">
+                    <td>MC</td>
+                    <td>MR</td>
+                    <td>M+</td>
+                    <td>M-</td>
+                    <td>MS</td>
+                </tr>
+                <tr class="row4">
+                    <td colspan="2">
+                        <div class="trigonometry">
+                            <img src="imgs/trigonometry-90.png" alt="">&nbsp;&nbsp;
+                            <span>Trigonometry</span>&nbsp;
+                            <i class="material-icons">expand_more</i>
+                        </div>
+                        <!-- <select name="" id="">
+                            <option value="" class="trigonometry">
+                                <img src="imgs/trigonometry-90.png" alt="">&nbsp;&nbsp;
+                                <span>Trigonometry</span>&nbsp;
+                                <i class="material-icons">expand_more</i>
+                            </option>
+                            <option value="sine">sine</option>
+                            <option value="cos">cos</option>
+                            <option value="tan">tan</option>
+                            <option value="cot">cot</option>
+                            <option value="cosec">cosec</option>
+                            <option value="sec">sec</option>
+                        </select> -->
+                    </td>
+                    <td colspan="2">
+                        <div class="function"> 
+                            <span class="span1">&#10765;</span>&nbsp;&nbsp;
+                            <span class="span2">Function</span>&nbsp;
+                            <i class="material-icons">expand_more</i>
+                        </div>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr class="row5">
+                    <td>2<sup>nd</sup></td>
+                    <td>
+                        <span title="PI">&#960;</span>
+                        <input type="hidden" name="pi" value="3.14">
+                    </td>
+                    <td><span title="e">&#8495;</span></td>
+                    <td>
+                        <span>C</span>
+                        <input type="hidden" name="clear" value="clear">
+                    </td>
+                    <td>
+                        <i class="material-icons">backspace</i>
+                        <input type="hidden" name="backspace" value="backspace">
+                    </td>
+                </tr>
+                <tr class="row6">
+                    <td>
+                        <span>x<sup>2</sup></span>
+                        <input type="hidden" name="square" value="^2">
+                    </td>
+                    <td>
+                        <span>1/x</span>
+                        <input type="hidden" name="oneDivideByX" value="1/">
+                    </td>
+                    <td>
+                        <span>| x |</span>
+                        <input type="hidden" name="" value="">
+                    </td>
+                    <td>exp</td>
+                    <td>mod</td>
+                </tr>
+                <tr class="row7">
+                    <td>
+                        <span title="square_root">&#8730;x</span>
+                        <input type="hidden" name="squareRoot" value="√">
+                    </td>
+                    <td>
+                        <span>(</span>
+                        <input type="hidden" name="openingBracket" value="(">
+                    </td>
+                    <td>
+                        <span>)</span>
+                        <input type="hidden" name="closingBracket" value=")">
+                    </td>
+                    <td>
+                        <span>n!</span>
+                        <input type="hidden" name="factorial" value="">
+                    </td>
+                    <td>
+                        <span class="division" title="division">&#247;</span>
+                        <input type="hidden" name="division" value="/">
+                    </td>
+                </tr>
+                <tr class="row8">
+                    <td>
+                        <span>x<sup>y</sup></span>
+                        <input type="hidden" name="power" value="">
+                    </td>
+                    <td>
+                        <span>7</span>
+                        <input type="hidden" name="seven" value="7">
+                    </td>
+                    <td>
+                        <span>8</span>
+                        <input type="hidden" name="eight" value="8">
+                    </td>
+                    <td>
+                        <span>9</span>
+                        <input type="hidden" name="nine" value="9">
+                    </td>
+                    <td>
+                        <span title="multiplication">&#10799;</span>
+                        <input type="hidden" name="multiplication" value="x">
+                    </td>
+                </tr>
+                <tr class="row9">
+                    <td>
+                        <span>10<sup>x</sup></span>
+                        <input type="hidden" name="powerOften" value="">
+                    </td>
+                    <td>
+                        <span>4</span>
+                        <input type="hidden" name="four" value="4">
+                    </td>
+                    <td>
+                        <span>5</span>
+                        <input type="hidden" name="five" value="5">
+                    </td>
+                    <td>
+                        <span>6</span>
+                        <input type="hidden" name="six" value="6">
+                    </td>
+                    <td>
+                        <span class="minus" title="minus">&#8722;</span>
+                        <input type="hidden" name="minus" value="-">
+                    </td>
+                </tr>
+                <tr class="row10">
+                    <td>
+                        <span>log</span>
+                        <input type="hidden" name="log" value="">
+                    </td>
+                    <td>
+                        <span>1</span>
+                        <input type="hidden" name="one" value="1">
+                    </td>
+                    <td>
+                        <span>2</span>
+                        <input type="hidden" name="two" value="2">
+                    </td>
+                    <td>
+                        <span>3</span>
+                        <input type="hidden" name="three" value="3">
+                    </td>
+                    <td>
+                        <span class="plus" title="plus">&#43;</span>
+                        <input type="hidden" name="plus" value="+">
+                    </td>
+                </tr>
+                <tr class="row11">
+                    <td>
+                        <span>ln</span>
+                        <input type="hidden" name="ln" value="">
+                    </td>
+                    <td>
+                        <span title="plusOrMinus">&#177;</span>
+                        <input type="hidden" name="">
+                    </td>
+                    <td>
+                        <span>0</span>
+                        <input type="hidden" name="zero" value="0">
+                    </td>
+                    <td>
+                        <span>.</span>
+                        <input type="hidden" name="decimal" value=".">
+                    </td>
+                    <td>
+                        <span class="equal">=</span>
+                        <input type="hidden" name="equal" value="=">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
 </body>
 </html>
