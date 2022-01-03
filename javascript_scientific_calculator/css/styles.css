@@ -7,7 +7,7 @@ h2{
     margin-top: 15px;
     text-align: center;
     color: rgb(119, 140, 184);
-    /* background-color: rgb(119, 140, 184); */
+    text-transform: uppercase;
 }
 .table-container{
     display: flex;
